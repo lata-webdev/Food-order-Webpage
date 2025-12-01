@@ -1,0 +1,153 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*css variable*/
+:root {
+    --navbar-height: 59px;
+}
+
+/*navigation bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+
+/*navigation bar: logo and image*/
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/*navigation bar:list styling*/
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: darkcyan;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+    top: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 3px 300px;
+    min-height: 700px;
+    /* border: 2px solid red; */
+    background-image: url('bac.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 11px;
+    margin-top: 30px;
+    font-family: "Agbalumo", system-ui;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.0rem;
+    padding: 10px;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+/*service section*/
+
+#services {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* color: white; */
+    text-align: center;
+    padding: 11px;
+    margin-top: 50px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/*utility classes (means main class)*/
+.h-primary {
+    font-size: 2.8rem;
+    font-family: "Agbalumo", system-ui;
+    /* padding: 30px; */
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    font-family: "Agbalumo", system-ui;
+    /* padding: 12px; */
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
